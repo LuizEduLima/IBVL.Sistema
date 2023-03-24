@@ -12,12 +12,12 @@ namespace IBVL.Sistema.Domain.Entities
         public CPF CPF { get; set; }
         public string Naturalidade { get; set; }
         public string Nacionalidade { get; set; } = "Brasileiro";
-        public string Profissao { get; set; }
         public List<Telefone> Contatos { get; set; } = new();
         public List<Profissao> Profissoes { get; set; } = new();
         public List<CargoPastoral> Cargos { get; set; } = new();
         public bool EstaEmpregado { get; set; }
         public bool EhBatizado { get; set; }
+        public bool EhDizimista { get; set; }
         public string Foto { get; set; }
 
     }

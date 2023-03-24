@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "anudutLL+oNdbMoS3lJrUiw1WYrgJ4/Ao/Lfuozh3AstQl6ryX3uxbffK4arc5ngZHKjoV8nQBx3Ioaw9WAcfQ==",
+  "success": true,
+  "projectFilePath": "C:\\IBVL\\IBVL.Sistema\\src\\IBVL.Sistema.Ioc\\IBVL.Sistema.Ioc.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://proget.icatuseguros.com.br/nuget/Icatu'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}
