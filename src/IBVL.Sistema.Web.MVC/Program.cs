@@ -1,4 +1,9 @@
+using IBVL.Sistema.Ioc.DependencyInjectionConfig;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+builder.Services.AddInfraStructure(builder.Configuration);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
