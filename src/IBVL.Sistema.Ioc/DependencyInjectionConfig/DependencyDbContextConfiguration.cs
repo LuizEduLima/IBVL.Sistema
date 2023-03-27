@@ -1,5 +1,6 @@
 ﻿using IBVL.Sistema.Data.Context;
 using IBVL.Sistema.Data.Identity;
+using IBVL.Sistema.Data.Repository;
 using IBVL.Sistema.Domain.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -32,6 +33,14 @@ namespace IBVL.Sistema.Ioc.DependencyInjectionConfig
         {
 
             services.AddScoped<IAutenticacao, Autenticacao>();
+            services.AddScoped<ICargoPastoralRepository, CargoPastoralRepository>();
+            services.AddScoped<IEnderecoRepository, EnderecoRepository>();
+            services.AddScoped<IMembroProfissaoRepository, MembroProfissaoRepository>();
+            services.AddScoped<IMembroRepository, MembroRepository>();
+            services.AddScoped<IPerfilRepository, PerfilRepository>();
+            services.AddScoped<ITelefoneRepository, TelefoneRepository>();
+            services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+
 
             return services;
         }

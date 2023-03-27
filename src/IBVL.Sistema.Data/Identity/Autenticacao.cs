@@ -56,5 +56,15 @@ namespace IBVL.Sistema.Data.Identity
         {
             await _signInManager.SignOutAsync();
         }
+
+        public async Task<bool> RemoverUsuario(string email)
+        {
+            var usuario = await _userManager.FindByEmailAsync(email);
+
+            var result = await _userManager.RemoveLoginAsync(usuario, usuario.Email, usuario.SecurityStamp);
+
+            return result.Succeeded;
+        }
     }
 }
+
