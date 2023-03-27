@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace IBVL.Sistema.Data.Identity
 {
-    internal class PerfilInicialIdentity : IPerfilInicialIdentity
+    public class PerfilInicialIdentity : IPerfilInicialIdentity
     {
         private readonly RoleManager<IdentityRole> _roleManager;
 
@@ -41,3 +41,4 @@ namespace IBVL.Sistema.Data.Identity
 
         }
     }
+}

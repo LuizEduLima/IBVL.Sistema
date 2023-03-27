@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\IBVL.Sistema.Web.MVC.props" />
+</Project>

@@ -1,5 +1,0 @@
-C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Data\obj\Debug\net6.0\IBVL.Sistema.Data.csproj.AssemblyReference.cache
-C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Data\obj\Debug\net6.0\IBVL.Sistema.Data.GeneratedMSBuildEditorConfig.editorconfig
-C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Data\obj\Debug\net6.0\IBVL.Sistema.Data.AssemblyInfoInputs.cache
-C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Data\obj\Debug\net6.0\IBVL.Sistema.Data.AssemblyInfo.cs
-C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Data\obj\Debug\net6.0\IBVL.Sistema.Data.csproj.CoreCompileInputs.cache

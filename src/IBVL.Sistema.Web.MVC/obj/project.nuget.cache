@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Jpbbj+tcypHmuquq8G+m4PsQ8nC0sbIucVvoMjIfBCe7+bpoY5Pw3VDWggJc9u5SVAjjZ0lur/z+qp2yejEPLQ==",
+  "dgSpecHash": "TEL02+829nrRSMpJqoK9tanxhjfNi5hGpWO8w59yF2uLfxmdyPaF1eAKkTzqlyRX1dMS87d/AcOnI+8jYnAtLA==",
   "success": true,
   "projectFilePath": "C:\\IBVL\\IBVL.Sistema\\src\\IBVL.Sistema.Web.MVC\\IBVL.Sistema.Web.MVC.csproj",
   "expectedPackageFiles": [
@@ -32,6 +32,7 @@
     "C:\\Users\\Luiz Eduardo\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.4\\microsoft.entityframeworkcore.analyzers.7.0.4.nupkg.sha512",
     "C:\\Users\\Luiz Eduardo\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.4\\microsoft.entityframeworkcore.relational.7.0.4.nupkg.sha512",
     "C:\\Users\\Luiz Eduardo\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.4\\microsoft.entityframeworkcore.sqlserver.7.0.4.nupkg.sha512",
+    "C:\\Users\\Luiz Eduardo\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.4\\microsoft.entityframeworkcore.tools.7.0.4.nupkg.sha512",
     "C:\\Users\\Luiz Eduardo\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Luiz Eduardo\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\Luiz Eduardo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

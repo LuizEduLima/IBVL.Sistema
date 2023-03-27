@@ -1,5 +1,6 @@
 ﻿using IBVL.Sistema.Data.Context;
 using IBVL.Sistema.Data.Identity;
+using IBVL.Sistema.Domain.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -16,13 +17,23 @@ namespace IBVL.Sistema.Ioc.DependencyInjectionConfig
                     migration => migration.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName));
             });
 
+            services.AddDependencyInjection();
             services.AddIdentityDependencyInjection();
+
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.AccessDeniedPath = "/";
+            });
 
             return services;
         }
         private static IServiceCollection AddDependencyInjection(this IServiceCollection services)
         {
-          
+            services.AddScoped<ApplicationDbContext>();
+
+            services.AddScoped<IAutenticacao, Autenticacao>();
+            services.AddScoped<IPerfilInicialIdentity, PerfilInicialIdentity>();
+            services.AddScoped<IUsuarioInicialIdentity, UsuarioPadraoIdentity>();
             return services;
         }
         private static IServiceCollection AddIdentityDependencyInjection(this IServiceCollection services)

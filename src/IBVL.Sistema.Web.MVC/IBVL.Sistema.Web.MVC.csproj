@@ -5,8 +5,12 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-
+<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.4">	
+	<ItemgrouItemGroup></ItemGroup>
+		
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.4">Itemgrou
   <ItemGroup>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.4">
     <ProjectReference Include="..\IBVL.Sistema.Ioc\IBVL.Sistema.Ioc.csproj" />
   </ItemGroup>
 
