@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\IBVL.Sistema.Web.MVC.props" />
-</Project>

@@ -1,0 +1,17 @@
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\bin\Debug\net6.0\IBVL.Sistema.Ioc.deps.json
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\bin\Debug\net6.0\IBVL.Sistema.Ioc.dll
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\bin\Debug\net6.0\IBVL.Sistema.Ioc.pdb
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\bin\Debug\net6.0\IBVL.Sistema.Data.dll
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\bin\Debug\net6.0\IBVL.Sistema.Domain.dll
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\bin\Debug\net6.0\IBVL.Sistema.Data.pdb
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\bin\Debug\net6.0\IBVL.Sistema.Domain.pdb
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\obj\Debug\net6.0\IBVL.Sistema.Ioc.csproj.AssemblyReference.cache
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\obj\Debug\net6.0\IBVL.Sistema.Ioc.GeneratedMSBuildEditorConfig.editorconfig
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\obj\Debug\net6.0\IBVL.Sistema.Ioc.AssemblyInfoInputs.cache
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\obj\Debug\net6.0\IBVL.Sistema.Ioc.AssemblyInfo.cs
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\obj\Debug\net6.0\IBVL.Sistema.Ioc.csproj.CoreCompileInputs.cache
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\obj\Debug\net6.0\IBVL.Sistema.Ioc.csproj.CopyComplete
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\obj\Debug\net6.0\IBVL.Sistema.Ioc.dll
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\obj\Debug\net6.0\refint\IBVL.Sistema.Ioc.dll
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\obj\Debug\net6.0\IBVL.Sistema.Ioc.pdb
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\obj\Debug\net6.0\ref\IBVL.Sistema.Ioc.dll

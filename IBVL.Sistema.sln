@@ -21,6 +21,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBVL.Sistema.Ioc", "src\IBV
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBVL.Sistema.Application", "src\IBVL.Sistema.Application\IBVL.Sistema.Application.csproj", "{F511D0CE-A859-49DF-B0AA-EE578CC39C4C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Web", "1-Web", "{B4EFA19F-0BBD-4706-8D4A-1707ABD43A2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBVL.Sistema.Web", "src\IBVL.Sistema.Web\IBVL.Sistema.Web.csproj", "{5976E7DD-F1C9-4CD2-AA45-E344DFE1B4B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,10 @@ Global
 		{F511D0CE-A859-49DF-B0AA-EE578CC39C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F511D0CE-A859-49DF-B0AA-EE578CC39C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F511D0CE-A859-49DF-B0AA-EE578CC39C4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5976E7DD-F1C9-4CD2-AA45-E344DFE1B4B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5976E7DD-F1C9-4CD2-AA45-E344DFE1B4B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5976E7DD-F1C9-4CD2-AA45-E344DFE1B4B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5976E7DD-F1C9-4CD2-AA45-E344DFE1B4B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,6 +62,7 @@ Global
 		{86DB6DA9-DD2E-4890-9995-D73AB359F768} = {FFFE4F3A-948F-4AEE-AED4-199156139E99}
 		{5F8536D3-02A6-4F1B-AE43-A067BC0D7DF6} = {69BCF7F3-611A-4F26-A8FA-29735F618EB1}
 		{F511D0CE-A859-49DF-B0AA-EE578CC39C4C} = {246094C9-FCB5-4501-902A-38A75937F671}
+		{5976E7DD-F1C9-4CD2-AA45-E344DFE1B4B0} = {B4EFA19F-0BBD-4706-8D4A-1707ABD43A2D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD9E9C20-DA8F-44A3-A665-92CC8FB6EE69}
