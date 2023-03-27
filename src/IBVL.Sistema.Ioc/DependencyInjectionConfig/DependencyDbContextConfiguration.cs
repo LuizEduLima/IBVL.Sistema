@@ -1,4 +1,6 @@
 ﻿using IBVL.Sistema.Data.Context;
+using IBVL.Sistema.Data.Identity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,13 +16,21 @@ namespace IBVL.Sistema.Ioc.DependencyInjectionConfig
                     migration => migration.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName));
             });
 
-            services.AddDependencyInjection();
+            services.AddIdentityDependencyInjection();
 
             return services;
         }
-
         private static IServiceCollection AddDependencyInjection(this IServiceCollection services)
         {
+          
+            return services;
+        }
+        private static IServiceCollection AddIdentityDependencyInjection(this IServiceCollection services)
+        {
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
+
             return services;
         }
     }

@@ -1609,6 +1609,16 @@
             "rid": "win"
           }
         }
+      },
+      "IBVL.Sistema.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/IBVL.Sistema.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IBVL.Sistema.Domain.dll": {}
+        }
       }
     }
   },
@@ -4346,10 +4356,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "IBVL.Sistema.Domain/1.0.0": {
+      "type": "project",
+      "path": "../IBVL.Sistema.Domain/IBVL.Sistema.Domain.csproj",
+      "msbuildProject": "../IBVL.Sistema.Domain/IBVL.Sistema.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "IBVL.Sistema.Domain >= 1.0.0",
       "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.4",
@@ -4388,7 +4404,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\IBVL\\IBVL.Sistema\\src\\IBVL.Sistema.Domain\\IBVL.Sistema.Domain.csproj": {
+              "projectPath": "C:\\IBVL\\IBVL.Sistema\\src\\IBVL.Sistema.Domain\\IBVL.Sistema.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

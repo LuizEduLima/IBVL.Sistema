@@ -1505,6 +1505,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "IBVL.Sistema.Domain": "1.0.0",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.4",
@@ -1515,6 +1516,16 @@
         },
         "runtime": {
           "bin/placeholder/IBVL.Sistema.Data.dll": {}
+        }
+      },
+      "IBVL.Sistema.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/IBVL.Sistema.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IBVL.Sistema.Domain.dll": {}
         }
       },
       "IBVL.Sistema.Ioc/1.0.0": {
@@ -4096,6 +4107,11 @@
       "type": "project",
       "path": "../IBVL.Sistema.Data/IBVL.Sistema.Data.csproj",
       "msbuildProject": "../IBVL.Sistema.Data/IBVL.Sistema.Data.csproj"
+    },
+    "IBVL.Sistema.Domain/1.0.0": {
+      "type": "project",
+      "path": "../IBVL.Sistema.Domain/IBVL.Sistema.Domain.csproj",
+      "msbuildProject": "../IBVL.Sistema.Domain/IBVL.Sistema.Domain.csproj"
     },
     "IBVL.Sistema.Ioc/1.0.0": {
       "type": "project",

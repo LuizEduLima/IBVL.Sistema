@@ -6,6 +6,8 @@ namespace IBVL.Sistema.Domain.Core.ValueObjcts
     {
         private const int _DIGITOS = 9;
         public string Numero;
+        public string OrgaoEmissor { get; set; }
+        public DateTime DataEmissao { get; set; }
 
         public RG(string numero)
         {

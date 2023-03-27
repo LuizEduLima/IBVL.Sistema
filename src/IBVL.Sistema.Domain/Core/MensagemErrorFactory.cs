@@ -1,6 +1,6 @@
 ﻿namespace IBVL.Sistema.Domain.Core
 {
-    public static class MensagemFactoryErros
+    public static class MensagemErrorFactory
     {
         public static string MaximoCaractes(string campo, int valorMaximo)
             => $"O {campo} não deve ultrapassar o valor {valorMaximo} caracteres.";

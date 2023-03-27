@@ -21,4 +21,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\IBVL.Sistema.Domain\IBVL.Sistema.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
