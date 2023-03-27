@@ -25,7 +25,6 @@ namespace IBVL.Sistema.Data.Repository
 
             await _usuarioManager.AddToRoleAsync(usuarioResult, "admin");
 
-
         }
 
         public async Task AdicionarPerfilGerenteUsuario(Usuario usuario)
