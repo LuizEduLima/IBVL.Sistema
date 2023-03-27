@@ -17,8 +17,6 @@ public partial class TelefoneConfiguration : IEntityTypeConfiguration<Telefone>
         builder.Property(p=>p.Tipo)
             .HasConversion(new EnumToStringConverter<TipoContato>()).HasMaxLength(15);
 
-        builder.OwnsOne(c => c.Membro)
-               .OwnsMany(m => m.Contatos);
             
             
     }

@@ -20,7 +20,7 @@ namespace IBVL.Sistema.Data.EntitiesConfigurations
             });
             builder.OwnsOne(m => m.RG, rg =>
             {
-                rg.Property(r => r.OrgaoEmissor).HasColumnName("OrgaoEmissr").HasMaxLength(40).IsRequired();
+                rg.Property(r => r.OrgaoEmissor).HasColumnName("OrgaoEmissor").HasMaxLength(40).IsRequired();
             });
             builder.OwnsOne(m => m.RG, rg =>
             {
@@ -77,13 +77,19 @@ namespace IBVL.Sistema.Data.EntitiesConfigurations
               .HasConversion(new EnumToStringConverter<FormaAdimissao>()).HasMaxLength(30)
               .IsRequired();
 
+            builder.HasOne(m => m.Usuario)
+                              .WithOne(u => u.Membro)
+                              .HasForeignKey<Membro>(m => m.UsuarioId);
 
-            builder.HasOne(p => p.Usuario)
+
+            builder.HasOne(m => m.Endereco)
                    .WithOne(u => u.Membro)
-                   .HasForeignKey<Membro>(m => m.UsuarioId)
-                   .OnDelete(DeleteBehavior.NoAction);
-                   
-                  
+                   .HasForeignKey<Endereco>(e => e.MembroId);
+                    
+
+            builder.HasMany(m => m.Contatos)
+                    .WithOne(t =>t.Membro);    
+
 
 
 

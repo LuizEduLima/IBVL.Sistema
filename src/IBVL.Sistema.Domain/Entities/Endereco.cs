@@ -4,6 +4,7 @@
 
 using IBVL.Sistema.Domain.Core;
 using IBVL.Sistema.Domain.Exceptions;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace IBVL.Sistema.Domain.Entities
 {
@@ -17,6 +18,7 @@ namespace IBVL.Sistema.Domain.Entities
         public string Estado { get; set; }
         public string CEP { get; set; }
 
+        [ForeignKey("MembroId")]
         public Guid MembroId { get; set; }
         public Membro Membro { get; set; }
 

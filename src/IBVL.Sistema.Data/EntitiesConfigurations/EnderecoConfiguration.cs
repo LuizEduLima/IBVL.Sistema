@@ -22,9 +22,7 @@ namespace IBVL.Sistema.Data.EntitiesConfigurations
             builder.Property(e => e.CEP).IsRequired().HasMaxLength(8);
             builder.Property(e => e.Complemento).IsRequired().HasMaxLength(100);
 
-            builder.HasOne(m => m.Membro)
-                   .WithOne(m => m.Endereco)
-                   .HasForeignKey<Endereco>(e => e.MembroId);
+         
         }
     }
 

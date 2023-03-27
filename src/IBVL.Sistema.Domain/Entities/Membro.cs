@@ -1,6 +1,8 @@
 ﻿using IBVL.Sistema.Domain.Core;
 using IBVL.Sistema.Domain.Core.Enums;
 using IBVL.Sistema.Domain.Core.ValueObjcts;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.Serialization;
 
 namespace IBVL.Sistema.Domain.Entities
 {
@@ -14,7 +16,7 @@ namespace IBVL.Sistema.Domain.Entities
         public string Naturalidade { get; set; }
         public string Nacionalidade { get; set; } = "Brasileiro";
         public EstadoCivil EstadoCivil { get; set; }
-        public decimal Altura { get; set; }
+        
         public GrupoSanquineo GrupoSanquineo { get; set; }
         public CPF CPF { get; set; }
         public RG RG { get; set; }       
@@ -31,11 +33,16 @@ namespace IBVL.Sistema.Domain.Entities
         public Guid UsuarioId { get; set; }
         public Usuario Usuario { get; set; }
 
+
+
         public Guid EnderecoId { get; set; }
-        public Endereco Endereco { get; set; } = new();
+        [IgnoreDataMember] public Endereco Endereco { get; set; } 
+
       
         public List<Telefone> Contatos { get; set; } = new();
+       
         public List<Profissao> Profissoes { get; set; } = new();
+      
         public CargoPastoral CargoPastoral { get; set; } = new();
 
 

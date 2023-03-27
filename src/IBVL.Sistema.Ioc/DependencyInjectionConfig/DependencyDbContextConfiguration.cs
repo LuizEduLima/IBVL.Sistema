@@ -12,11 +12,12 @@ namespace IBVL.Sistema.Ioc.DependencyInjectionConfig
     {
         public static IServiceCollection AddInfraStructure(this IServiceCollection services, IConfiguration configure)
         {
-            services.AddDbContext<ApplicationDbContext>(options => {
+            services.AddDbContext<ApplicationDbContext>(options =>
+            {
                 options.UseSqlServer(configure.GetConnectionString("DefaultConnection"),
                     migration => migration.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName));
             });
-
+            services.AddScoped<ApplicationDbContext>();
             services.AddDependencyInjection();
             services.AddIdentityDependencyInjection();
 
@@ -29,11 +30,9 @@ namespace IBVL.Sistema.Ioc.DependencyInjectionConfig
         }
         private static IServiceCollection AddDependencyInjection(this IServiceCollection services)
         {
-            services.AddScoped<ApplicationDbContext>();
 
             services.AddScoped<IAutenticacao, Autenticacao>();
-            services.AddScoped<IPerfilInicialIdentity, PerfilInicialIdentity>();
-            services.AddScoped<IUsuarioInicialIdentity, UsuarioPadraoIdentity>();
+
             return services;
         }
         private static IServiceCollection AddIdentityDependencyInjection(this IServiceCollection services)
@@ -44,5 +43,8 @@ namespace IBVL.Sistema.Ioc.DependencyInjectionConfig
 
             return services;
         }
+
     }
+
 }
+
