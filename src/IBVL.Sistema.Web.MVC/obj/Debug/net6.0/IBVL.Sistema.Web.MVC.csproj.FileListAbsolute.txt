@@ -1,0 +1,8 @@
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Web.MVC\obj\Debug\net6.0\IBVL.Sistema.Web.MVC.csproj.AssemblyReference.cache
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Web.MVC\obj\Debug\net6.0\IBVL.Sistema.Web.MVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Web.MVC\obj\Debug\net6.0\IBVL.Sistema.Web.MVC.AssemblyInfoInputs.cache
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Web.MVC\obj\Debug\net6.0\IBVL.Sistema.Web.MVC.AssemblyInfo.cs
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Web.MVC\obj\Debug\net6.0\IBVL.Sistema.Web.MVC.csproj.CoreCompileInputs.cache
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Web.MVC\obj\Debug\net6.0\IBVL.Sistema.Web.MVC.MvcApplicationPartsAssemblyInfo.cache
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Web.MVC\obj\Debug\net6.0\IBVL.Sistema.Web.MVC.RazorAssemblyInfo.cache
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Web.MVC\obj\Debug\net6.0\IBVL.Sistema.Web.MVC.RazorAssemblyInfo.cs

@@ -5,6 +5,11 @@ namespace IBVL.Sistema.Domain.Entities
 {
     public class CargoPastoral : Entity
     {
+
+        public CargoPastoral()
+        {
+            
+        }
         public CargoPastoral(string nome, string descricao)
         {
             Nome = nome;

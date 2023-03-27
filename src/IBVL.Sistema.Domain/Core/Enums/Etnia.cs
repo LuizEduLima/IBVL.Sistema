@@ -8,11 +8,11 @@ namespace IBVL.Sistema.Domain.Core.Enums
 {
     public enum Etnia
     {
-        Branca = 'B',
-        Preta = 'P',
-        Amarela = 'A',
-        Parda = 'D',
-        Indigena = 'I',
-        Outro = 'O'
+        Branca,
+        Preta,
+        Amarela,
+        Parda,
+        Indigena,
+        Outro
     }
 }

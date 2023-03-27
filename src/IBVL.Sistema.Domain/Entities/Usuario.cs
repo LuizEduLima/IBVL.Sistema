@@ -6,6 +6,8 @@ namespace IBVL.Sistema.Domain.Entities
     {
         public string Login { get; set; }
         public string Senha { get; set; }
+
+        public Membro Membro { get; set; }
     }
 
 }

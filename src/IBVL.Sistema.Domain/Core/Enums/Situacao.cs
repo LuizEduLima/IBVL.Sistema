@@ -9,19 +9,13 @@ namespace IBVL.Sistema.Domain.Core.Enums
 {
     public enum Situacao
     {
-        Ativo = 'A',
-        AfastadoVoluntariamente ='V',
-        DesligadoVoluntariamente ='D',
-        Excluido='X',
-        Impossibilitado ='I',
+        Ativo,
+        AfastadoVoluntariamente,
+        DesligadoVoluntariamente,
+        Excluido,
+        Impossibilitado,
         Transferido,
-        Falecido = 'F',
-
-    }
-    public enum FormaAdimissao
-    {
-        ProfissaoFeBatismo,
-        TransferidoOutraIgreja       
+        Falecido,
 
     }
 }

@@ -8,7 +8,7 @@ namespace IBVL.Sistema.Domain.Core.Enums
 {
     public enum GrauEstrucao
     {
-         EnsinoFundamentalIncompleto,
+         EnsinoFundamentalIncompleto ,
          EnsinoFundamentalCompleto,
          EnsinoMedioIncompleto, 
          EnsinoMedioCompleto,

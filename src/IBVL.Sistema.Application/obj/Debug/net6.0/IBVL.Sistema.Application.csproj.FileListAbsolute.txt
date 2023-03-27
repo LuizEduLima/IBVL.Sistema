@@ -1,0 +1,12 @@
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Application\bin\Debug\net6.0\IBVL.Sistema.Application.deps.json
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Application\bin\Debug\net6.0\IBVL.Sistema.Application.dll
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Application\bin\Debug\net6.0\IBVL.Sistema.Application.pdb
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Application\obj\Debug\net6.0\IBVL.Sistema.Application.csproj.AssemblyReference.cache
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Application\obj\Debug\net6.0\IBVL.Sistema.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Application\obj\Debug\net6.0\IBVL.Sistema.Application.AssemblyInfoInputs.cache
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Application\obj\Debug\net6.0\IBVL.Sistema.Application.AssemblyInfo.cs
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Application\obj\Debug\net6.0\IBVL.Sistema.Application.csproj.CoreCompileInputs.cache
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Application\obj\Debug\net6.0\IBVL.Sistema.Application.dll
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Application\obj\Debug\net6.0\refint\IBVL.Sistema.Application.dll
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Application\obj\Debug\net6.0\IBVL.Sistema.Application.pdb
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Application\obj\Debug\net6.0\ref\IBVL.Sistema.Application.dll

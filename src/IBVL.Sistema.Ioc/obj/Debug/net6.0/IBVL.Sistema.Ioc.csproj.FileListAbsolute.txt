@@ -1,0 +1,5 @@
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\obj\Debug\net6.0\IBVL.Sistema.Ioc.csproj.AssemblyReference.cache
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\obj\Debug\net6.0\IBVL.Sistema.Ioc.GeneratedMSBuildEditorConfig.editorconfig
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\obj\Debug\net6.0\IBVL.Sistema.Ioc.AssemblyInfoInputs.cache
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\obj\Debug\net6.0\IBVL.Sistema.Ioc.AssemblyInfo.cs
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\obj\Debug\net6.0\IBVL.Sistema.Ioc.csproj.CoreCompileInputs.cache

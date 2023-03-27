@@ -13,13 +13,14 @@ namespace IBVL.Sistema.Data.EntitiesConfigurations
             builder.HasKey(k => k.Id);
             builder.Property(c => c.Nome)
                 .HasMaxLength(50).IsRequired();
+
             builder.Property(c => c.Descricao)
                .HasMaxLength(250);
 
             builder.HasIndex(c => c.Nome).IsUnique();
 
             builder.HasData(
-                new CargoPastoral("Membro", @"Pessoa que só participa do Rol de membros,
+                new CargoPastoral("Membro", @"Pessoa participanete do Rol de membros,
                                              não exercendo atividades ministeriais"));
         }
     }
