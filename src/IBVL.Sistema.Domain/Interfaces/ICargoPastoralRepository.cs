@@ -6,7 +6,7 @@ namespace IBVL.Sistema.Domain.Interfaces
     {
         Task<CargoPastoral> ObterCargoPastoralPorId(Guid id);
         Task<IEnumerable<CargoPastoral>> ObterCargosPastorais(int paginas, int limite);
-        Task<CargoPastoral> AdicionarCargoPastoral(Membro membro);
-        Task RemoverMembro(Guid id);
+        Task<CargoPastoral> AdicionarCargoPastoral(CargoPastoral cargoPastoral);
+        Task RemoverCargoPatoral(Guid id);
     }
 }

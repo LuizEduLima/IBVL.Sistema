@@ -1,20 +1,30 @@
-﻿using IBVL.Sistema.Domain.Entities;
+﻿using IBVL.Sistema.Data.Context;
+using IBVL.Sistema.Domain.Entities;
 using IBVL.Sistema.Domain.Interfaces;
 
 namespace IBVL.Sistema.Data.Repository
 {
     public class EnderecoRepository : IEnderecoRepository
     {
-        public Task AdicionarEndereco(Endereco endereco)
+        private readonly ApplicationDbContext _context;
+
+        public EnderecoRepository(ApplicationDbContext context)
+        => _context = context;
+
+
+        public async Task AdicionarEndereco(Endereco endereco)
         {
-            throw new NotImplementedException();
+            await _context.Enderecos.AddAsync(endereco);
+            await _context.SaveChangesAsync();
         }
 
-        public Task<Endereco> AtualizarEndereco(Endereco endereco)
+        public async Task<Endereco> AtualizarEndereco(Endereco endereco)
         {
-            throw new NotImplementedException();
+            _context.Enderecos.Update(endereco);
+            await _context.SaveChangesAsync();
+            return endereco;
         }
     }
 }
-  
+
 

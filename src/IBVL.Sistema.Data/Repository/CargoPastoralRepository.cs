@@ -1,35 +1,41 @@
-﻿using IBVL.Sistema.Domain.Entities;
+﻿using IBVL.Sistema.Data.Context;
+using IBVL.Sistema.Domain.Entities;
 using IBVL.Sistema.Domain.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace IBVL.Sistema.Data.Repository
 {
     public class CargoPastoralRepository : ICargoPastoralRepository
     {
-        public Task<CargoPastoral> AdicionarCargoPastoral(Membro membro)
+        private readonly ApplicationDbContext _context;
+
+        public CargoPastoralRepository(ApplicationDbContext context)
+        => _context = context;
+
+        public async Task<CargoPastoral> AdicionarCargoPastoral(CargoPastoral cargoPastoral)
         {
-            throw new NotImplementedException();
+            await _context.CargoPastorais.AddAsync(cargoPastoral);
+            await _context.SaveChangesAsync();
+            return cargoPastoral;
         }
 
-        public Task<CargoPastoral> ObterCargoPastoralPorId(Guid id)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<CargoPastoral> ObterCargoPastoralPorId(Guid id)
+        => await _context.CargoPastorais.FirstOrDefaultAsync(c => c.Equals(id));
 
-        public Task<IEnumerable<CargoPastoral>> ObterCargosPastorais(int paginas, int limite)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<IEnumerable<CargoPastoral>> ObterCargosPastorais(int paginas, int limite)
+       => await _context.CargoPastorais
+                        .Skip(paginas)
+                        .Take(limite)
+                        .ToListAsync();
 
-        public Task RemoverMembro(Guid id)
+        public async Task RemoverCargoPatoral(Guid id)
         {
-            throw new NotImplementedException();
+            var result = await ObterCargoPastoralPorId(id);
+            if (result == null) return;
+
+            _context.Remove(result);
+           await _context.SaveChangesAsync();
         }
     }
 }
-  
 
