@@ -21,8 +21,4 @@
     <ProjectReference Include="..\IBVL.Sistema.Ioc\IBVL.Sistema.Ioc.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Entities\" />
-  </ItemGroup>
-
 </Project>
