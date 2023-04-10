@@ -17,3 +17,5 @@ C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\obj\Debug\net6.0\IBVL.Sistema.Ioc.pdb
 C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\obj\Debug\net6.0\ref\IBVL.Sistema.Ioc.dll
 C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\bin\Debug\net6.0\IBVL.Sistema.Ioc.runtimeconfig.json
 C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\obj\Debug\net6.0\IBVL.Sistema.Ioc.genruntimeconfig.cache
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\bin\Debug\net6.0\IBVL.Sistema.Application.dll
+C:\IBVL\IBVL.Sistema\src\IBVL.Sistema.Ioc\bin\Debug\net6.0\IBVL.Sistema.Application.pdb

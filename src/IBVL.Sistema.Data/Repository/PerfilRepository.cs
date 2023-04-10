@@ -17,7 +17,7 @@ namespace IBVL.Sistema.Data.Repository
             _usuarioManager = usuarioManager;
         }
 
-        public async Task AdicionarPerfilAdministradorUsuario(Usuario usuario)
+        public async Task AdicionarPerfilAdministradorUsuarioAsync(Usuario usuario)
         {
             var usuarioResult = await _usuarioManager.FindByEmailAsync(usuario.Login);
 
@@ -27,7 +27,7 @@ namespace IBVL.Sistema.Data.Repository
 
         }
 
-        public async Task AdicionarPerfilGerenteUsuario(Usuario usuario)
+        public async Task AdicionarPerfilGerenteUsuarioAsync(Usuario usuario)
         {
             var usuarioResult = await _usuarioManager.FindByEmailAsync(usuario.Login);
 
@@ -37,7 +37,7 @@ namespace IBVL.Sistema.Data.Repository
 
         }
 
-        public async Task AtualizarPerfilUsuario(Usuario usuario, string perfil)
+        public async Task AtualizarPerfilUsuarioAsync(Usuario usuario, string perfil)
         {
             var usuarioResult = await _usuarioManager.FindByEmailAsync(usuario.Login);
 
@@ -51,7 +51,7 @@ namespace IBVL.Sistema.Data.Repository
             await _usuarioManager.AddToRoleAsync(usuarioResult, perfil);
         }
 
-        public async Task RemoverPerfilUsuario(Usuario usuario)
+        public async Task RemoverPerfilUsuarioAsync(Usuario usuario)
         {
             var usuarioResult = await _usuarioManager.FindByEmailAsync(usuario.Login);
 

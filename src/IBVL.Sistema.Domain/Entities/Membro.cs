@@ -38,9 +38,11 @@ namespace IBVL.Sistema.Domain.Entities
         public Guid EnderecoId { get; set; }
         [IgnoreDataMember] 
         public Endereco Endereco { get; set; }
-        public List<Telefone> Contatos { get; set; } = new();
-        public List<Profissao> Profissoes { get; set; } = new();
+        public List<Telefone> Contatos { get; set; } = new();       
         public CargoPastoral CargoPastoral { get; set; } = new();
+        public List<MembroProfissao> profissoes { get; set; } = new();
+
+        
 
 
 

@@ -13,13 +13,13 @@ namespace IBVL.Sistema.Data.Repository
         => _context = context;
 
 
-        public async Task AdicionarMembroProfissao(Membro membro, Profissao profissao)
+        public async Task AdicionarMembroProfissaoAsync(Membro membro, Profissao profissao)
         {
             await _context.MembrosProfissoes.AddAsync(new MembroProfissao { Membro = membro, Profissao = profissao });
             await _context.SaveChangesAsync();
         }
 
-        public async Task RemoverPromissaoMembro(Membro membro, Profissao profissao)
+        public async Task RemoverPromissaoMembroAsync(Membro membro, Profissao profissao)
         {
             var result = await ObterMembroProfissao(membro, profissao);
             if (result == null) return;

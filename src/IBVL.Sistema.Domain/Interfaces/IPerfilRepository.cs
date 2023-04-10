@@ -4,9 +4,9 @@ namespace IBVL.Sistema.Domain.Interfaces
 {
     public interface IPerfilRepository
     {
-        Task AdicionarPerfilAdministradorUsuario(Usuario usuario);
-        Task AdicionarPerfilGerenteUsuario(Usuario usuario);
-        Task RemoverPerfilUsuario(Usuario usuario);
-        Task AtualizarPerfilUsuario(Usuario usuario, string perfil);
+        Task AdicionarPerfilAdministradorUsuarioAsync(Usuario usuario);
+        Task AdicionarPerfilGerenteUsuarioAsync(Usuario usuario);
+        Task RemoverPerfilUsuarioAsync(Usuario usuario);
+        Task AtualizarPerfilUsuarioAsync(Usuario usuario, string perfil);
     }
 }

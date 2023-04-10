@@ -14,24 +14,24 @@ public class UsuarioRepository : IUsuarioRepository
         _autenticacao = autenticacao;
     }
 
-    public async Task AdicionarUsuario(Usuario usuario)
+    public async Task AdicionarUsuarioAsync(Usuario usuario)
     {
-        var usuarioResult = await _autenticacao.RegistrarUsuario(usuario.Login, usuario.Senha);
+        var usuarioResult = await _autenticacao.RegistrarUsuarioAsync(usuario.Login, usuario.Senha);
 
         if (usuarioResult)
             await _usuarioContex.Usuarios.AddAsync(usuario);
 
         if (await _usuarioContex.SaveChangesAsync() == 0)
-            await _autenticacao.RemoverUsuario(usuario.Login);
+            await _autenticacao.RemoverUsuarioAsync(usuario.Login);
 
     }
 
-    public async Task<IEnumerable<Usuario>> ObterUsuarios()
+    public async Task<IEnumerable<Usuario>> ObterUsuariosAsync()
     => await _usuarioContex.Usuarios
                            .Where(u => u.Ativo == true)
                            .ToListAsync();
 
-    public async Task RemoverUsuario(Guid id)
+    public async Task RemoverUsuarioAsync(Guid id)
     {
         var usuario = await Obterusuario(id);
 

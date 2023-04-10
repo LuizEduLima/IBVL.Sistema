@@ -1,0 +1,67 @@
+﻿@model IBVL.Sistema.Application.Dtos.MembroDto
+
+<form class="row g-3 needs-validation" novalidate asp-action="Create" method="post">
+    <input type="hidden" asp-for="Endereco.CEP" />
+    <div class="col-md-3">
+        <label for="validationCustom01" class="form-label">CEP</label>
+        <input type="text" class="form-control" id="validationCustom01" asp-for="Endereco.CEP" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+    <div class="col-md-7">
+        <label for="validationCustom01" class="form-label">Logradouro</label>
+        <input type="text" class="form-control" id="validationCustom01" asp-for="Endereco.Logradouro" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+    <div class="col-md-2">
+        <label for="validationCustom02" class="form-label">Numero</label>
+        <input type="text" class="form-control" id="validationCustom02" asp-for="Endereco.Numero" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>   
+    <div class="col-md-3">
+        <label for="validationCustom04" class="form-label">Cidade</label>
+        <select asp-for="Endereco.Cidade" class="form-select" id="validationCustom04" required>
+            <option value="">Duque de Caxias</option>           
+            <option selected disable>...</option>
+        </select>
+        <div class="invalid-feedback">
+            Please select a valid state.
+        </div>
+    </div>
+    <div class="col-md-3">
+        <label for="validationCustom04" class="form-label">Bairro</label>
+        <select asp-for="Endereco.Bairro" class="form-select" id="validationCustom04" required>
+            <option value="">Vila Leopoldina</option>
+            <option selected disable>...</option>
+        </select>
+        <div class="invalid-feedback">
+            Please select a valid state.
+        </div>
+    </div>
+    <div class="col-md-1">
+        <label for="validationCustom04" class="form-label">Estado</label>
+        <select asp-for="Endereco.Cidade" class="form-select" id="validationCustom04" required>
+            <option value="">RJ</option>
+            <option selected disable>...</option>
+        </select>
+        <div class="invalid-feedback">
+            Please select a valid state.
+        </div>
+    </div>
+    <div class="col-md-5">
+        <label for="validationCustom02" class="form-label">Complemento</label>
+        <input type="text" class="form-control" id="validationCustom02" asp-for="Endereco.Numero" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+      
+    <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+</form>

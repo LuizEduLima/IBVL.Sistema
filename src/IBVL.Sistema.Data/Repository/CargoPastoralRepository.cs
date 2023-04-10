@@ -12,25 +12,29 @@ namespace IBVL.Sistema.Data.Repository
         public CargoPastoralRepository(ApplicationDbContext context)
         => _context = context;
 
-        public async Task<CargoPastoral> AdicionarCargoPastoral(CargoPastoral cargoPastoral)
+        public async Task<CargoPastoral> AdicionarCargoPastoralAsync(CargoPastoral cargoPastoral)
         {
             await _context.CargoPastorais.AddAsync(cargoPastoral);
             await _context.SaveChangesAsync();
             return cargoPastoral;
         }
 
-        public async Task<CargoPastoral> ObterCargoPastoralPorId(Guid id)
+        public async Task<CargoPastoral> ObterCargoPastoralPorIdAsync(Guid id)
         => await _context.CargoPastorais.FirstOrDefaultAsync(c => c.Equals(id));
 
-        public async Task<IEnumerable<CargoPastoral>> ObterCargosPastorais(int paginas, int limite)
+        public async Task<CargoPastoral> ObterCargoPastoralPorNomeAsync(string nome)
+    => await _context.CargoPastorais.FirstOrDefaultAsync(c => c.Nome.Equals(nome));
+
+
+        public async Task<IEnumerable<CargoPastoral>> ObterCargosPastoraisAsync(int paginas, int limite)
        => await _context.CargoPastorais
                         .Skip(paginas)
                         .Take(limite)
                         .ToListAsync();
 
-        public async Task RemoverCargoPatoral(Guid id)
+        public async Task RemoverCargoPatoralAsync(Guid id)
         {
-            var result = await ObterCargoPastoralPorId(id);
+            var result = await ObterCargoPastoralPorIdAsync(id);
             if (result == null) return;
 
             _context.Remove(result);

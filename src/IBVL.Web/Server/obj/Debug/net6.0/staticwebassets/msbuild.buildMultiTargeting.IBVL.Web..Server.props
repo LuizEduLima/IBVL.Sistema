@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\IBVL.Web..Server.props" />
+</Project>

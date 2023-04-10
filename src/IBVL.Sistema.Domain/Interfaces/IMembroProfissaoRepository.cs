@@ -4,7 +4,7 @@ namespace IBVL.Sistema.Domain.Interfaces
 {
     public interface IMembroProfissaoRepository
     {
-        Task AdicionarMembroProfissao(Membro membro, Profissao profissao);
-        Task RemoverPromissaoMembro(Membro membro, Profissao profissao);
+        Task AdicionarMembroProfissaoAsync(Membro membro, Profissao profissao);
+        Task RemoverPromissaoMembroAsync(Membro membro, Profissao profissao);
     }
 }

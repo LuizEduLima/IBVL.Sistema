@@ -1,15 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace IBVL.Sistema.Domain.Core.Enums
 {
     public enum EstadoCivil
     {
+        [Display(Name = "Casado(a)")]
         Casado,
+        [Display(Name = "Solteiro(a)")]
         Solteiro,
-        Viuvo
+        [Display(Name = "Viuvo(a)")]
+        Viuvo,
+        [Display(Name = "Divorciado(a)")]
+        Divorciado,
+        [Display(Name = "Separado(a)")]
+        Separado
     }
 }

@@ -4,8 +4,8 @@ namespace IBVL.Sistema.Domain.Interfaces
 {
     public interface ITelefoneRepository
     {
-        Task AdicionarTelefone(Telefone telefone);
-        Task RemoverTelefone(Telefone telefone);
+        Task AdicionarTelefoneAsync(Telefone telefone);
+        Task RemoverTelefoneAsync(Telefone telefone);
 
 
     }

@@ -4,8 +4,8 @@ namespace IBVL.Sistema.Domain.Interfaces
 {
     public interface IEnderecoRepository
     {
-        Task AdicionarEndereco(Endereco endereco);
-        Task<Endereco> AtualizarEndereco(Endereco endereco);
+        Task AdicionarEnderecoAsync(Endereco endereco);
+        Task<Endereco> AtualizarEnderecoAsync(Endereco endereco);
 
     }
 }

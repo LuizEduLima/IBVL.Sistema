@@ -1,5 +1,4 @@
 ﻿using IBVL.Sistema.Domain.Core;
-using System.Runtime.Serialization;
 
 namespace IBVL.Sistema.Domain.Entities
 {

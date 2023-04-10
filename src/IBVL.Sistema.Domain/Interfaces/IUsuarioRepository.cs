@@ -4,8 +4,8 @@ namespace IBVL.Sistema.Domain.Interfaces
 {
     public interface IUsuarioRepository
     {
-        Task AdicionarUsuario(Usuario usuario);
-        Task RemoverUsuario(Guid id);
-        Task<IEnumerable<Usuario>> ObterUsuarios();
+        Task AdicionarUsuarioAsync(Usuario usuario);
+        Task RemoverUsuarioAsync(Guid id);
+        Task<IEnumerable<Usuario>> ObterUsuariosAsync();
     }
 }

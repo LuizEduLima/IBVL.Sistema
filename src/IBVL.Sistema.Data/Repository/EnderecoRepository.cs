@@ -12,13 +12,13 @@ namespace IBVL.Sistema.Data.Repository
         => _context = context;
 
 
-        public async Task AdicionarEndereco(Endereco endereco)
+        public async Task AdicionarEnderecoAsync(Endereco endereco)
         {
             await _context.Enderecos.AddAsync(endereco);
             await _context.SaveChangesAsync();
         }
 
-        public async Task<Endereco> AtualizarEndereco(Endereco endereco)
+        public async Task<Endereco> AtualizarEnderecoAsync(Endereco endereco)
         {
             _context.Enderecos.Update(endereco);
             await _context.SaveChangesAsync();

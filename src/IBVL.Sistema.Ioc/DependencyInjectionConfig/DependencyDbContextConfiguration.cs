@@ -1,4 +1,5 @@
-﻿using IBVL.Sistema.Data.Context;
+﻿using IBVL.Sistema.Application.Mappings;
+using IBVL.Sistema.Data.Context;
 using IBVL.Sistema.Data.Identity;
 using IBVL.Sistema.Data.Repository;
 using IBVL.Sistema.Domain.Interfaces;
@@ -22,13 +23,17 @@ namespace IBVL.Sistema.Ioc.DependencyInjectionConfig
             services.AddDependencyInjection();
             services.AddIdentityDependencyInjection();
 
+            
+
             services.ConfigureApplicationCookie(options =>
             {
                 options.AccessDeniedPath = "/";
             });
 
             return services;
-        }
+        }   
+
+
         private static IServiceCollection AddDependencyInjection(this IServiceCollection services)
         {
 
@@ -37,8 +42,7 @@ namespace IBVL.Sistema.Ioc.DependencyInjectionConfig
             services.AddScoped<IEnderecoRepository, EnderecoRepository>();
             services.AddScoped<IMembroProfissaoRepository, MembroProfissaoRepository>();
             services.AddScoped<IMembroRepository, MembroRepository>();
-            services.AddScoped<IPerfilRepository, PerfilRepository>();
-            services.AddScoped<ITelefoneRepository, TelefoneRepository>();
+            services.AddScoped<IPerfilRepository, PerfilRepository>();            
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 
 
@@ -50,6 +54,11 @@ namespace IBVL.Sistema.Ioc.DependencyInjectionConfig
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
+            return services;
+        }
+        public static IServiceCollection AddAutoMapperConfig(this IServiceCollection services)
+        {
+            services.AddAutoMapper(typeof(DtoToEntityProfile));
             return services;
         }
 

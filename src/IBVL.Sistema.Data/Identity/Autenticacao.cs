@@ -16,7 +16,7 @@ namespace IBVL.Sistema.Data.Identity
             _signInManager = signInManager;
         }
 
-        public async Task<bool> RegistrarUsuario(string email, string senha)
+        public async Task<bool> RegistrarUsuarioAsync(string email, string senha)
         {
             var usuario = new ApplicationUser
             {
@@ -39,7 +39,7 @@ namespace IBVL.Sistema.Data.Identity
 
         }
 
-        public async Task<bool> UsuarioEstaAutenticado(string email, string senha)
+        public async Task<bool> UsuarioEstaAutenticadoAsync(string email, string senha)
         {
             var usuario = new ApplicationUser
             {
@@ -52,12 +52,12 @@ namespace IBVL.Sistema.Data.Identity
             var result = await _signInManager.PasswordSignInAsync(usuario, senha, false, false);
             return result.Succeeded;
         }
-        public async Task Logout()
+        public async Task LogoutAsync()
         {
             await _signInManager.SignOutAsync();
         }
 
-        public async Task<bool> RemoverUsuario(string email)
+        public async Task<bool> RemoverUsuarioAsync(string email)
         {
             var usuario = await _userManager.FindByEmailAsync(email);
 
